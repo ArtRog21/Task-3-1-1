@@ -5,8 +5,10 @@ import web.model.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
+@Transactional
 @Repository
 public class UserDAOImpl implements UserDAO{
 
